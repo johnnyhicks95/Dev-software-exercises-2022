@@ -1,2 +1,2 @@
 # Dev-exercises-2022
- Kali tools, bash, python, js... basic exercises
+ Kali tools, bash, python, js... basic practical exercises
