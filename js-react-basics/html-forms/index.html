@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <form action="results.html" method="GET" enctype="multipart/form-data" >
+        <!-- Text tag -->
+        <div>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="username" required>
+        </div>
+        <!-- Email -->
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" >
+        </div>
+        <!-- Number -->
+        <div>
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" min="1" max="200" step="5"> 
+        </div>
+        <!-- Date -->
+        <div>
+            <label for="date">Birthdate</label>
+            <input type="date" name="date" id="date" min="2019-06-10">
+        </div>
+        <!-- Checkbox -->
+        <div>
+            Favorite food
+            <div>
+                <label for="banana">Banana</label>
+                <input type="checkbox" name="banana" id="banana">
+            </div>
+            <div>
+                <label for="apple">Apple</label>
+                <input type="checkbox" name="apple" id="apple">
+            </div>
+        </div>
+
+        <!-- Radio- -->
+        <div>
+            Gender
+            <div>
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="male" value="male">
+            </div>
+            <div>
+                <label for="female">Female</label>
+                <input type="radio" name="gender" id="female" value="female">
+            </div>
+
+        </div>
+
+        <!-- Select tag (Option values)-->
+        <div>
+            <label for="eyeColor">Eye color</label>
+            <select name="eyeColor" id="eyeColor">
+            <!-- <select name="eyeColor" id="eyeColor" multiple>  MULTIPLE CHOICES-->
+                <option value="Green">Green</option>
+                <option value="Green" label="Red" ></option>
+            </select>
+        </div>
+
+        <!-- Textarea -->
+        <div>
+            <label for="bio">Bio</label>
+            <textarea name="bio" id="bio" cols="30" rows="10">My name is ...</textarea>
+        </div>
+
+        <!-- Hidden label -->
+        <input type="hidden" name="hidden" value="hi">
+
+        <!-- File tag -->
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file" name="file" >
+        </div>
+
+        <!-- Telephone's number -->
+        <div>
+            <label for="phone">Phone number</label>
+            <input type="tel" name="phone" id="phone" >
+        </div>
+
+        <!-- URL tag  -->
+        <div>
+            <label for="url">URL</label>
+            <input type="url" name="url" id="url" >
+        </div>
+        <!-- Color tag -->
+        <div>
+            <label for="color">Color</label>
+            <input type="color" name="color" id="color" >
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label for="password">Password</label>
+            <input name="password" type="password">
+        </div>
+        <!-- Sumitting & reset buttons -->
+        <button type="reset" >Reset</button>
+        <button type="submit" >Submit</button>
+    </form>
+</body>
+</html>
